@@ -1,7 +1,7 @@
 from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv ## load secert keys from the env invrioenmt to the current environemnt
 
-load_dotenv()
+load_dotenv(override=True)
 
 llm = ChatOpenAI(
     model = "gpt-4.1-mini"
