@@ -1,0 +1,17 @@
+{
+    "name": null,
+    "input_variables": [
+        "length_input",
+        "paper_input",
+        "style_input"
+    ],
+    "optional_variables": [],
+    "output_parser": null,
+    "partial_variables": {},
+    "metadata": null,
+    "tags": null,
+    "template": "\nSummarize the research paper titled \"{paper_input}\" using these guidelines:\nExplanation Style: {style_input}\nExplanation Length: {length_input}\n1. Mathematical Details:\n   - Include key mathematical equations from the paper if available.\n   - Break down the mathematical concepts with simple, intuitive code examples where helpful.\n2. Analogies:\n   - Include everyday analogies to clarify complex topics.\nIf any requested detail is missing from the paper, state \"Insufficient information available\" rather than making assumptions.\nMake sure the summary is clear, accurate, and matches the chosen style and length.\n",
+    "template_format": "f-string",
+    "validate_template": true,
+    "_type": "prompt"
+}
